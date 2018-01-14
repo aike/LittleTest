@@ -17,9 +17,9 @@ using UnityEngine;
 using LittleTest;
 
 public class MyTest : MonoBehaviour {
-	void Start () {
+    void Start () {
         Tester.DoTest(this);
-	}
+    }
 
     public void Test()
     {
@@ -34,9 +34,10 @@ public class MyTest : MonoBehaviour {
 ```
 
  1. Add LittleTest.cs in your Assets
- 1. Create `public void Test()` method
- 1. Descrive test name as `Tester.Test("testname");`
- 1. Descrive test using matchers;
+ 1. Add `public void Test()` method in your class
+ 1. Write test case as `Tester.Test("test case name");` in Test() method
+ 1. Write test using matchers as `Tester.AreEqual(actual, expect);` in Test() method
+ 1. excute test as `Tester.DoTest(this);`
 
 
 ## SCROLL VIEW OUTPUT
@@ -66,12 +67,14 @@ The following code disable tests and hide scroll view.
  - public static void IsNotNull(Object o)
 
 ## API
- - public static void SetName(string name)<br>define test name
- - public static void Test(string title)<br>define test case
- - public static void DoTest(Object obj)<br>execute Test() method of the class
- - public static void SetActive(bool flag)<br>enable/disable all tests
- - public static void SetScrollView(GameObject view)<br>set view and enable gui logging
- - public static void Log(string text)<br>show log text
+| API | description |
+|:----|:------------|
+| public static void SetName(string name) | define test name |
+| public static void Test(string title) | define test case |
+| public static void DoTest(Object obj) | execute Test() method of the class |
+| public static void SetActive(bool flag) | enable/disable all tests |
+| public static void SetScrollView(GameObject view) | set view and enable gui logging |
+| public static void Log(string text) | show log text |
 
 ## Credit
 LittleTest program is licenced under MIT License.  
