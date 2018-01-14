@@ -34,7 +34,7 @@ public class MyTest : MonoBehaviour {
 ```
 
  1. Add LittleTest.cs in your Assets
- 1. Include LittleTest
+ 1. Write `using LittleTest;`
  1. Add `public void Test()` method in your class
  1. Write test case as `Tester.Test("test case name");` in Test() method
  1. Write test using matchers as `Tester.AreEqual(actual, expect);` in Test() method
@@ -55,7 +55,7 @@ The following code shows test results in scroll view and console window;
 The following code disable tests and hide scroll view.
 
 ```cs
-        Tester.SetActive(false);
+    Tester.SetActive(false);
 ```
 
 ## MATCHER
