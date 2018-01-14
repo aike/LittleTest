@@ -1,0 +1,11 @@
+.DS_Store
+example/Library/
+example/Temp/
+example/obj/
+example/build/
+example/UnityPackageManager
+example/.vs
+*.csproj
+*.sln
+*.userprefs
+
