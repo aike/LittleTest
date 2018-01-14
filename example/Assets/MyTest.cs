@@ -34,7 +34,7 @@ public class MyTest : MonoBehaviour {
         Tester.AreEqual("aa", "aa");
         string nullstring = null;
         Tester.AreEqual(nullstring, null);
-        Tester.AreEqual((50 + 60 > 70), true);
+        Tester.AreEqual(50 + 60 > 70, true);
 
         Tester.Test("Object Test");
         Tester.IsNotNull(a);

@@ -42,7 +42,7 @@ public class MyTest : MonoBehaviour {
 
 
 ## SCROLL VIEW OUTPUT
-The following code shows test results in scroll view and console window;
+The following code shows test results in scroll view and console window.
 
 ```cs
     void Awake()
