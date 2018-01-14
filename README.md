@@ -34,6 +34,7 @@ public class MyTest : MonoBehaviour {
 ```
 
  1. Add LittleTest.cs in your Assets
+ 1. Include LittleTest
  1. Add `public void Test()` method in your class
  1. Write test case as `Tester.Test("test case name");` in Test() method
  1. Write test using matchers as `Tester.AreEqual(actual, expect);` in Test() method
@@ -58,23 +59,23 @@ The following code disable tests and hide scroll view.
 ```
 
 ## MATCHER
- - public static void AreEqual(Object o1, Object o2)
- - public static void AreEqual(string o1, string o2)
- - public static void AreEqual(int o1, int o2)
- - public static void AreEqual(float o1, float o2)
- - public static void AreEqual(bool o1, bool o2)
- - public static void IsNull(Object o)
- - public static void IsNotNull(Object o)
+ - Tester.AreEqual(Object o1, Object o2)
+ - Tester.AreEqual(string o1, string o2)
+ - Tester.AreEqual(int o1, int o2)
+ - Tester.AreEqual(float o1, float o2)
+ - Tester.AreEqual(bool o1, bool o2)
+ - Tester.IsNull(Object o)
+ - Tester.IsNotNull(Object o)
 
 ## API
 | API | description |
 |:----|:------------|
-| public static void SetName(string name) | define test name |
-| public static void Test(string title) | define test case |
-| public static void DoTest(Object obj) | execute Test() method of the class |
-| public static void SetActive(bool flag) | enable/disable all tests |
-| public static void SetScrollView(GameObject view) | set view and enable gui logging |
-| public static void Log(string text) | show log text |
+| Tester.SetName(string name) | define test name |
+| Tester.Test(string title) | define test case |
+| Tester.DoTest(Object obj) | execute Test() method of the class |
+| Tester.SetActive(bool flag) | enable/disable all tests |
+| Tester.SetScrollView(GameObject view) | set view and enable gui logging |
+| Tester.Log(string text) | show log text |
 
 ## Credit
 LittleTest program is licenced under MIT License.  
